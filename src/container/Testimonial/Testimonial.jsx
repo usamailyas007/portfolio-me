@@ -39,25 +39,11 @@ const testimonials = [
     feedback: 'Great Work! He did an excellent job on our Flutter, Node js project. We will definitely work with him again...',
   },
   {
-    _id: 5,
-    name: 'jorgewmp',
-    company: 'Upwork',
-    imgurl: upwork,
-    feedback: 'From the beginning, he made prior consultations to know in detail the task to be carried out, which provides a lot of confidence...',
-  },
-  {
     _id: 6,
     name: 'Emily Evans',
     company: 'LinkedIn',
     imgurl: linkedin,
     feedback: 'Hamza is a really professional and competent individual, so I was happy to have found him. My expectations were met...',
-  },
-  {
-    _id: 7,
-    name: 'ahmerhh',
-    company: 'Upwork',
-    imgurl: upwork,
-    feedback: 'Working with this seller was an absolute pleasure! They not only delivered a perfect job but also demonstrated a deep understanding of the task...',
   },
   // Add more testimonials if needed
 ];

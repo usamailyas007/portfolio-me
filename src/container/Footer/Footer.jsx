@@ -1,83 +1,55 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
-import { images } from '../../constants';
-import whatsapp from '../../assets/whatsapp.jpg';
+import { HiMail, HiPhone } from 'react-icons/hi';
+import { FaWhatsapp, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import './Footer.scss';
 
 const Footer = () => (
-  <div id="contact">
-    <motion.h2
-      whileInView={{ opacity: [0, 1], y: [-40, 0] }}
-      transition={{ duration: 0.35, ease: 'easeOut' }}
-      viewport={{ once: false, amount: 0.5 }}
-      className="head-text"
+  <div id="contact" className="app__footer-wrapper">
+    <motion.p
+      whileInView={{ opacity: [0, 1], y: [-16, 0] }}
+      transition={{ duration: 0.4, ease: 'easeOut' }}
+      viewport={{ once: false, amount: 0.6 }}
+      className="app__footer-tagline"
     >
-      Take a coffee & chat with me
-    </motion.h2>
+      Take a coffee &amp; chat with me
+    </motion.p>
 
-    <div className="app__footer-cards">
-      <motion.div
-        whileInView={{ opacity: [0, 1], y: [40, 0] }}
-        transition={{ duration: 0.3, delay: 0, ease: 'easeOut' }}
-        viewport={{ once: false, amount: 0.4 }}
-        className="app__footer-card"
-      >
-        <img src={images.email} alt="email" />
-        <a href="mailto:mhamzaali51272@gmail.com" className="p-text">mhamzaali51272@gmail.com</a>
-      </motion.div>
-      <motion.div
-        whileInView={{ opacity: [0, 1], y: [40, 0] }}
-        transition={{ duration: 0.3, delay: 0.1, ease: 'easeOut' }}
-        viewport={{ once: false, amount: 0.4 }}
-        className="app__footer-card"
-      >
-        <img src={images.mobile} alt="phone" />
-        <a href="tel:+923167980123" className="p-text">+92 316-7980123</a>
-      </motion.div>
-      <motion.div
-        whileInView={{ opacity: [0, 1], y: [40, 0] }}
-        transition={{ duration: 0.3, delay: 0.2, ease: 'easeOut' }}
-        viewport={{ once: false, amount: 0.4 }}
-        className="app__footer-card"
-      >
-        <img src={whatsapp} alt="phone" />
-        <a
-          href="https://wa.me/923167980123"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-text"
-        >
-          +92 316-7980123
+    <motion.div
+      whileInView={{ opacity: [0, 1], y: [30, 0] }}
+      transition={{ duration: 0.45, ease: 'easeOut', delay: 0.1 }}
+      viewport={{ once: false, amount: 0.4 }}
+      className="app__footer-card"
+    >
+      {/* Left — name */}
+      <div className="app__footer-left">
+        <span className="app__footer-name">Muhammad Hamza</span>
+        <span className="app__footer-copy">© {new Date().getFullYear()} All rights reserved</span>
+      </div>
+
+      {/* Center — contact links */}
+      <div className="app__footer-center">
+        <a href="mailto:mhamzaali51272@gmail.com" className="app__footer-icon" title="Email">
+          <HiMail />
         </a>
-      </motion.div>
-    </div>
-    {/* {!isFormSubmitted ? (
-        <div className="app__footer-form app__flex">
-          <div className="app__flex">
-            <input className="p-text" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
-          </div>
-          <div className="app__flex">
-            <input className="p-text" type="email" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} />
-          </div>
-          <div>
-            <textarea
-              className="p-text"
-              placeholder="Your Message"
-              value={message}
-              name="message"
-              onChange={handleChangeInput}
-            />
-          </div>
-          <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
-        </div>
-      ) : ( */}
-    {/* <div>
-      <h3 className="head-text">
-        Thank you for getting in touch!
-      </h3>
-    </div> */}
-    {/* )} */}
+        <a href="tel:+923167980123" className="app__footer-icon" title="Phone">
+          <HiPhone />
+        </a>
+        <a href="https://wa.me/923167980123" target="_blank" rel="noopener noreferrer" className="app__footer-icon app__footer-icon--wa" title="WhatsApp">
+          <FaWhatsapp />
+        </a>
+      </div>
+
+      {/* Right — socials */}
+      <div className="app__footer-right">
+        <a href="https://www.linkedin.com/in/muhammad-hamza-16ba44269" target="_blank" rel="noopener noreferrer" className="app__footer-icon app__footer-icon--li" title="LinkedIn">
+          <FaLinkedinIn />
+        </a>
+        <a href="https://github.com/M-HamzaDev" target="_blank" rel="noopener noreferrer" className="app__footer-icon app__footer-icon--gh" title="GitHub">
+          <FaGithub />
+        </a>
+      </div>
+    </motion.div>
   </div>
 );
 
