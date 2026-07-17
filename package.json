@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://usamailyas007.github.io/portfolio-me",
   "dependencies": {
     "@sanity/client": "^2.23.2",
     "@sanity/image-url": "^1.0.1",
