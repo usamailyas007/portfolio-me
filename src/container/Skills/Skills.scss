@@ -168,6 +168,14 @@
   }
 }
 
+.vertical-timeline-element-content {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06) !important;
+}
+
+.vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px #fff !important;
+}
+
 .expIcon{
   display: flex;
   justify-content: center;

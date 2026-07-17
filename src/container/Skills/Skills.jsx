@@ -96,11 +96,11 @@ const skillsData = [
     bgColor: '',
     icon: cpp,
   },
-  {
-    name: 'C#',
-    bgColor: '#ffff',
-    icon: csharp,
-  },
+  // {
+  //   name: 'C#',
+  //   bgColor: '#ffff',
+  //   icon: csharp,
+  // },
   {
     name: 'REST APIs',
     bgColor: '#ffff',

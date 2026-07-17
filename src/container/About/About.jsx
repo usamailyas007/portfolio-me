@@ -37,7 +37,7 @@ const About = () => (
     <div id="testimonials">
       <div className="app__testimonial-item app__flex">
         <div className="app__testimonial-content">
-          <p className="p-text">I am Full Stack Flutter Developer with 4+ years of experience in mobile app and backend development. I help startups, businesses, and entrepreneurs build scalable, high-quality applications using Flutter, Node.js, Firebase, Supabase, MongoDB, and MySQL. Experienced in GetX, Provider, Riverpod, and BLoC state management, I create clean, maintainable, and high-performance applications with excellent user experiences. From UI implementation to backend architecture and API development, I can handle the complete development lifecycle. My goal is simple: deliver reliable, scalable, and business-focused solutions that help clients achieve their objectives faster and more efficiently.</p>
+          <p className="p-text">Full Stack Flutter Developer with 3+ years of experience building scalable mobile and backend solutions for startups and businesses. I specialize in Flutter, Node.js, Firebase, Supabase, MongoDB, and MySQL, backed by strong expertise in GetX, Provider, Riverpod, and BLoC state management. From pixel-perfect UI to robust backend architecture and API development, I own the entire development lifecycle, including CI/CD pipelines and App Store/Play Store deployment, so releases ship smoothly and reliably. My focus: reliable, maintainable, high-performance applications that help clients hit their goals faster.</p>
         </div>
       </div>
     </div>

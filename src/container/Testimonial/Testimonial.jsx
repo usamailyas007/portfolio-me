@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import fiver from '../../assets/fiverr (2).png';
-import upwork from '../../assets/upwork.png';
 import linkedin from '../../assets/linkedin.png';
-import alayzone from '../../assets/alayzone.jpg';
-import zysoftec from '../../assets/Untitled design (1).png'; // Update path as needed
-import fuzionDev from '../../assets/Untitled design (3).png'; // Update path as needed
+import codexenix from '../../assets/codexenix.svg';
+import libas from '../../assets/libas.svg';
+import devconst from '../../assets/devconst.png';
+import zysoftec from '../../assets/Untitled design (1).png'; // Paragon Logics IT Solution & Company
+import fuzionDev from '../../assets/Untitled design (3).png'; // FATECH & SOLUTIONS
 import './Testimonial.scss';
 
 const testimonials = [
@@ -15,7 +16,7 @@ const testimonials = [
     name: 'ismailjaddad',
     company: 'Fiverr',
     imgurl: fiver,
-    feedback: 'I had the pleasure of working with Hamza on deploying my code, and the experience was truly exceptional...',
+    feedback: 'I had the pleasure of working with Usama on deploying my code, and the experience was truly exceptional...',
   },
   {
     _id: 2,
@@ -43,7 +44,7 @@ const testimonials = [
     name: 'Emily Evans',
     company: 'LinkedIn',
     imgurl: linkedin,
-    feedback: 'Hamza is a really professional and competent individual, so I was happy to have found him. My expectations were met...',
+    feedback: 'Usama is a really professional and competent individual, so I was happy to have found him. My expectations were met...',
   },
   // Add more testimonials if needed
 ];
@@ -51,33 +52,33 @@ const testimonials = [
 const brands = [
   {
     _id: 1,
-    name: 'ZySoftec',
-    imgUrl: zysoftec,
+    name: 'Code Xenix',
+    imgUrl: codexenix,
   },
   {
     _id: 2,
-    name: 'FuzionDev',
-    imgUrl: fuzionDev,
+    name: 'LIBAS International FZCO',
+    imgUrl: libas,
   },
   {
     _id: 3,
-    name: 'Fiverr',
-    imgUrl: fiver,
+    name: 'DevConst',
+    imgUrl: devconst,
   },
   {
     _id: 4,
-    name: 'Alayzone',
-    imgUrl: alayzone,
+    name: 'Paragon Logics IT Solution & Company',
+    imgUrl: zysoftec,
   },
   {
     _id: 5,
-    name: 'Upwork',
-    imgUrl: upwork,
+    name: 'FATECH & SOLUTIONS',
+    imgUrl: fuzionDev,
   },
   {
     _id: 6,
-    name: 'LinkedIn',
-    imgUrl: linkedin,
+    name: 'Fiverr',
+    imgUrl: fiver,
   },
   // Add more brands if needed
 ];

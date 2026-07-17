@@ -1,101 +1,149 @@
-import React from 'react';
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-import fiverr from '../../assets/fiverr (2).png';
-import career from '../../assets/career.jpg';
-import zysoftec from '../../assets/Untitled design (1).png'; // Add appropriate path for ZySoftec logo
-import fuzionDev from '../../assets/Untitled design (3).png'; // Add appropriate path for Fuzion Dev logo
-import inthevisual from '../../assets/inthevisual.jpg'; // Add appropriate path for Fuzion Dev logo
-import './Skills.scss';
+import React from "react";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import codexenix from "../../assets/codexenix.svg";
+import libas from "../../assets/libas.svg";
+import devconst from "../../assets/devconst.png";
+import zysoftec from "../../assets/Untitled design (1).png";
+import fuzionDev from "../../assets/Untitled design (3).png";
+import "./Skills.scss";
 
 const Experience = () => (
   <VerticalTimeline>
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      contentStyle={{ background: 'linear-gradient(135deg, #820dff, #4e0899)', color: 'white' }}
-      contentArrowStyle={{ borderRight: '7px solid  #820dff' }}
-      date="2025 - Present"
-      icon={(
+      contentStyle={{
+        background: "linear-gradient(135deg, #C6E8A0, #A8D96C)",
+        color: "black",
+      }}
+      contentArrowStyle={{ borderRight: "7px solid  #A8D96C" }}
+      date="Oct 2025 - Present"
+      icon={
         <div className="expIcon">
-          <img src={inthevisual} alt="ZySoftec" />
+          <img src={codexenix} alt="Code Xenix" />
         </div>
-      )}
+      }
     >
-      <h3 className="vertical-timeline-element-title">Senior Software Engineer</h3>
-      <h4 className="vertical-timeline-element-subtitle">Acceltor LTD - Remote</h4>
+      <h3 className="vertical-timeline-element-title">
+        Senior Mobile App Developer
+      </h3>
+      <h4 className="vertical-timeline-element-subtitle">
+        Code Xenix - Lahore, Pakistan
+      </h4>
       <p>
-        As a Senior Full Stack Flutter Developer, I specialize in building scalable cross-platform applications using Flutter, Node.js, Express.js, MongoDB, MySQL, Firebase, and Supabase. My expertise spans mobile app development for Android and iOS, backend architecture, RESTful API development, and cloud-based solutions. I have extensive experience with state management approaches including GetX, Provider, Riverpod, and BLoC, enabling me to create maintainable and high-performance applications. My role involves architecting robust software solutions, optimizing performance, ensuring security and scalability, and collaborating with teams to deliver high-quality digital products that meet business objectives.
+        Leading development of the Nova Health mobile application using Flutter,
+        delivering scalable and user-friendly healthcare features. Integrating
+        RESTful APIs and implementing real-time chat and calling features using
+        WebSockets and VoIP technologies, while collaborating closely with
+        backend and design teams to ensure smooth feature delivery and optimal
+        app performance.
       </p>
     </VerticalTimelineElement>
 
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      contentStyle={{ background: 'linear-gradient(135deg, #a1e22c, #759831)' }}
-      contentArrowStyle={{ borderRight: '7px solid  #a1e22c' }}
-      date="Jan 2024 - Dec 2024"
-      icon={(
+      contentStyle={{
+        background: "linear-gradient(135deg, #E9D6BC, #D8BE98)",
+        color: "black",
+      }}
+      contentArrowStyle={{ borderRight: "7px solid  #D8BE98" }}
+      date="Mar 2025 - June 2025"
+      icon={
         <div className="expIcon">
-          <img src={zysoftec} alt="ZySoftec" />
+          <img src={libas} alt="LIBAS International FZCO" />
         </div>
-      )}
+      }
     >
-      <h3 className="vertical-timeline-element-title">Flutter Full Stack Developer</h3>
-      <h4 className="vertical-timeline-element-subtitle">Paragon Logics IT & Solution - Faisalabad</h4>
+      <h3 className="vertical-timeline-element-title">
+        Full Stack Flutter Developer (Part-Time)
+      </h3>
+      <h4 className="vertical-timeline-element-subtitle">
+        LIBAS International FZCO - Dubai, UAE
+      </h4>
       <p>
-        As a Full Stack Flutter Developer at Paragon Logics, I develop high-performance mobile applications using Flutter, Firebase, Node.js, and Express.js. I work on intuitive user interfaces, scalable backend systems, and efficient database solutions with MySQL. My responsibilities include enhancing application performance, maintaining code quality, and working closely with the team to deliver reliable and user-focused software products.
+        Developed the &ldquo;Libas &ndash; Buy &amp; Sell Preloved&rdquo;
+        e-commerce app serving 20,000+ users worldwide. Implemented chat,
+        bidding, push notifications, and Firebase Cloud Functions for seamless
+        real-time performance, increasing overall revenue by 20% through
+        optimized Flutter and Provider state management integration.
       </p>
     </VerticalTimelineElement>
 
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      date="June 2022 - Dec 2023"
-      icon={(
+      contentStyle={{
+        background: "linear-gradient(135deg, #FCE1E7, #F7C2CE)",
+        color: "black",
+      }}
+      contentArrowStyle={{ borderRight: "7px solid  #F7C2CE" }}
+      date="Nov 2024 - Oct 2025"
+      icon={
         <div className="expIcon">
-          <img src={fuzionDev} alt="Fuzion Dev" />
+          <img src={devconst} alt="DevConst" />
         </div>
-      )}
+      }
     >
       <h3 className="vertical-timeline-element-title">Flutter Developer</h3>
-      <h4 className="vertical-timeline-element-subtitle">FA Smart Tech & Solution - Faisalabad</h4>
+      <h4 className="vertical-timeline-element-subtitle">
+        DevConst - Islamabad, Pakistan
+      </h4>
       <p>
-        As a full-stack Next.js developer at Fuzion Dev, I create dynamic web applications using React components and Next.js for server-side rendering. I integrate with databases and develop APIs for backend logic and authentication. My role involves optimizing performance, ensuring security, and deploying applications for seamless user experiences.
+        Built multiple real-time projects including ride-booking and social
+        media applications from design to deployment. Collaborated with senior
+        developers in an agile environment, contributing to sprint planning and
+        code reviews, and improved team productivity by 30% and app performance
+        by 25% through optimized Flutter and Node.js integration.
       </p>
     </VerticalTimelineElement>
 
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      contentStyle={{ background: 'linear-gradient(135deg, #1dbf73, #afe8d1)', color: 'black' }}
-      contentArrowStyle={{ borderRight: '7px solid  #1dbf73' }}
-      date="2021 - Present"
-      icon={(
+      contentStyle={{ background: "linear-gradient(135deg, #a1e22c, #759831)" }}
+      contentArrowStyle={{ borderRight: "7px solid  #a1e22c" }}
+      date="Jan 2024 - Nov 2024"
+      icon={
         <div className="expIcon">
-          <img src={fiverr} alt="Fiverr" />
+          <img src={zysoftec} alt="Paragon Logics IT Solution & Company" />
         </div>
-      )}
+      }
     >
-      <h3 className="vertical-timeline-element-title">Full Stack Flutter Developer</h3>
-      <h4 className="vertical-timeline-element-subtitle">Freelancer on Fiverr</h4>
+      <h3 className="vertical-timeline-element-title">Mobile App Developer</h3>
+      <h4 className="vertical-timeline-element-subtitle">
+        Paragon Logics IT Solution & Company - Faisalabad, Pakistan
+      </h4>
       <p>
-        Experienced Full Stack Flutter Developer on Fiverr, building customized mobile and backend solutions since 2022. Leveraging Flutter, Firebase, Supabase, Node.js, Express.js, MongoDB, and MySQL to create scalable and high-performance applications. Skilled in state management solutions including GetX, Provider, Riverpod, and BLoC. Collaborating with global clients, I have successfully delivered multiple projects, transforming ideas into reliable and user-focused digital products. Proficient in optimizing performance and ensuring seamless user experiences.
+        Completed multiple projects integrating RESTful APIs, MySQL, and Node.js
+        server-side logic. Contributed to LIGO (Ride Booking App) and Go Duckin
+        (Map-based Social App), improving reliability and user engagement while
+        enhancing full-stack performance by bridging the Flutter frontend with
+        an optimized backend API architecture.
       </p>
     </VerticalTimelineElement>
 
-
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      contentStyle={{ background: 'linear-gradient(135deg, #0a6077, #0a6077, #076b6d)', color: 'white' }}
-      contentArrowStyle={{ borderRight: '7px solid  #0a6077' }}
-      date="2021 - 2022"
-      icon={(
+      date="Apr 2023 - Dec 2023"
+      icon={
         <div className="expIcon">
-          <img src={career} alt="Career Institute" />
+          <img src={fuzionDev} alt="FATECH & SOLUTIONS" />
         </div>
-      )}
+      }
     >
-      <h3 className="vertical-timeline-element-title">Full Stack Flutter Developer</h3>
-      <h4 className="vertical-timeline-element-subtitle">Career Institute Faisalabad</h4>
+      <h3 className="vertical-timeline-element-title">
+        Junior Flutter Developer
+      </h3>
+      <h4 className="vertical-timeline-element-subtitle">
+        FATECH & SOLUTIONS - Faisalabad, Pakistan
+      </h4>
       <p>
-        A key contributor to the Career Institute team, specializing in developing cross-platform mobile applications powered by Flutter and backend technologies. Leveraging Flutter, Firebase, Node.js, and Express.js, I design and implement scalable, feature-rich solutions that meet client requirements. Collaborating seamlessly with colleagues, I help create high-performance applications with a strong focus on user experience, reliability, and security.
+        Built and integrated Flutter applications with backend APIs and
+        databases for real-time data processing. Delivered features across
+        e-commerce, service-providing, and metaverse application projects,
+        developing strong foundations in debugging, code optimization, and
+        mobile UI best practices.
       </p>
     </VerticalTimelineElement>
   </VerticalTimeline>

@@ -23,29 +23,29 @@ const Footer = () => (
     >
       {/* Left — name */}
       <div className="app__footer-left">
-        <span className="app__footer-name">Muhammad Hamza</span>
+        <span className="app__footer-name">Usama Ilyas</span>
         <span className="app__footer-copy">© {new Date().getFullYear()} All rights reserved</span>
       </div>
 
       {/* Center — contact links */}
       <div className="app__footer-center">
-        <a href="mailto:mhamzaali51272@gmail.com" className="app__footer-icon" title="Email">
+        <a href="mailto:devusama818@gmail.com" className="app__footer-icon" title="Email">
           <HiMail />
         </a>
-        <a href="tel:+923167980123" className="app__footer-icon" title="Phone">
+        <a href="tel:+923197026592" className="app__footer-icon" title="Phone">
           <HiPhone />
         </a>
-        <a href="https://wa.me/923167980123" target="_blank" rel="noopener noreferrer" className="app__footer-icon app__footer-icon--wa" title="WhatsApp">
+        <a href="https://wa.me/923197026592" target="_blank" rel="noopener noreferrer" className="app__footer-icon app__footer-icon--wa" title="WhatsApp">
           <FaWhatsapp />
         </a>
       </div>
 
       {/* Right — socials */}
       <div className="app__footer-right">
-        <a href="https://www.linkedin.com/in/muhammad-hamza-16ba44269" target="_blank" rel="noopener noreferrer" className="app__footer-icon app__footer-icon--li" title="LinkedIn">
+        <a href="https://www.linkedin.com/in/usama-ilyas-ab5b67257" target="_blank" rel="noopener noreferrer" className="app__footer-icon app__footer-icon--li" title="LinkedIn">
           <FaLinkedinIn />
         </a>
-        <a href="https://github.com/M-HamzaDev" target="_blank" rel="noopener noreferrer" className="app__footer-icon app__footer-icon--gh" title="GitHub">
+        <a href="https://github.com/usamailyas007" target="_blank" rel="noopener noreferrer" className="app__footer-icon app__footer-icon--gh" title="GitHub">
           <FaGithub />
         </a>
       </div>

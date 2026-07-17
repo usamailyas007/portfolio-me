@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 // import { AppWrap } from '../../wrapper';
 // import { images } from '../../constants';
 import './Header.scss';
-import Amazon from '../../assets/profile-pic (1).png';
+import Amazon from '../../assets/profile-pic (1).jpg';
 import linkedin from '../../assets/linkedin.png';
 import github from '../../assets/github.png';
 import { IconCloud } from '../../components/hero-section';
@@ -125,7 +125,7 @@ const Header = () => (
           <span>👋</span>
           <div style={{ marginLeft: 20 }}>
             <p className="p-text">Hello, I am</p>
-            <h1 className="head-text">Muhammad Hamza</h1>
+            <h1 className="head-text">Usama Ilyas</h1>
           </div>
         </div>
 
@@ -146,12 +146,12 @@ const Header = () => (
           <div className="w-secCircle profileIMG">
             <img src={Amazon} alt="" />
           </div>{' '}
-          <a href="https://www.linkedin.com/in/muhammad-hamza-16ba44269" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/usama-ilyas-ab5b67257" target="_blank" rel="noreferrer">
             <div className="w-secCircle">
               <img src={linkedin} alt="" />
             </div>
           </a>
-          <a href="https://github.com/M-HamzaDev" target="_blank" rel="noreferrer">
+          <a href="https://github.com/usamailyas007" target="_blank" rel="noreferrer">
             <div className="w-secCircle">
               <img src={github} alt="" />
             </div>

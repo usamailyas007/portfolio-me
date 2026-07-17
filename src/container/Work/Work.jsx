@@ -18,6 +18,11 @@ import Rev from '../../assets/Projects/1 (3).png';
 import sub from '../../assets/Projects/1 (4).png';
 import nev from '../../assets/Projects/1 (5).png';
 import dashboard from '../../assets/Projects/dashboard.png';
+import novahealth from '../../assets/Projects/novahealth.png';
+import healink from '../../assets/Projects/healink.png';
+import mtloob from '../../assets/Projects/mtloob.png';
+import flirtmetrics from '../../assets/Projects/flirtmetrics.png';
+import rentify from '../../assets/Projects/rentify.png';
 // import { urlFor, client } from '../../client';
 import './Work.scss';
 
@@ -44,6 +49,112 @@ const works = [
     },
   },
   {
+    imgUrl: novahealth,
+    name: 'Nova Health - Online Pharmacy',
+    projectLink: 'https://play.google.com/store/apps/details?id=com.novahealth.app',
+    codeLink: 'https://play.google.com/store/apps/details?id=com.novahealth.app',
+    title: 'Nova Health - Online Pharmacy',
+    description: 'Nova Health is a healthcare e-commerce app that lets users search for medicines, compare prices, and get orders delivered or picked up from nearby pharmacies. I worked as a Full Stack Flutter Developer using Flutter and Django, building the shopping flow, product details, and cart/checkout experience.',
+    tags: ['Full Stack Applications', 'Mobile Apps', 'All'],
+    caseStudy: {
+      overview: 'Nova Health is an online pharmacy platform that makes it easy for users to find and order medicines, health products, and daily essentials from verified local pharmacies. Users can search by drug name, browse detailed product information including usage, side effects, and precautions, and choose between home delivery or in-store pickup. The app is designed to make healthcare shopping as simple and transparent as ordering anything else online.',
+      goal: 'The goal was to build a trustworthy medicine ordering experience where users could quickly find the right product, understand exactly what they were buying, and check out with confidence. The platform needed clear product detail pages with dosage and safety information, a flexible delivery-or-pickup flow, and a cart and checkout system that handled discounts, coupons, and shipping calculations accurately.',
+      challenge: 'A key challenge was presenting detailed medical product information in a way that felt clear and trustworthy rather than overwhelming. I built the Flutter product detail screens with structured sections for usage instructions, side effects, and precautions, pulling data from the Django backend through REST APIs. I implemented the cart and checkout flow with real-time price, discount, and shipping calculations, along with a delivery-or-pickup toggle that adjusted the checkout summary accordingly. I also worked on the home screen search and category browsing experience so users could find medicines and related products quickly across a large catalog.',
+      outcome: 'Nova Health launched on the Google Play Store, giving users a reliable way to order medicines and healthcare products online. The clear product detail layout reduced confusion around dosage and usage, and the flexible delivery/pickup options made the app convenient for different customer needs. The checkout flow handled discounts and coupons accurately from launch, and the app continues to serve as a dependable healthcare shopping platform.',
+      stats: [
+        { value: 'Flutter', label: 'Frontend' },
+        { value: 'Django', label: 'Backend' },
+        { value: 'Play Store', label: 'Platform' },
+      ],
+      platform: 'Play Store',
+    },
+  },
+  {
+    imgUrl: healink,
+    name: 'Healink - Habit & Wellness Tracker',
+    projectLink: 'https://apps.apple.com/pk/app/healink/id6445893464',
+    codeLink: 'https://apps.apple.com/pk/app/healink/id6445893464',
+    title: 'Healink - Habit & Wellness Tracker',
+    description: 'Healink is a mind and body wellness app that helps users build daily health habits and track key biomarkers backed by science. I worked as a Full Stack Flutter Developer, building the habit tracking dashboard, lifestyle score system, and biomarker tracking screens using Flutter and Node.js.',
+    tags: ['Full Stack Applications', 'AI-Powered Applications', 'All'],
+    caseStudy: {
+      overview: 'Healink is a science-based wellness app that helps users improve their mind, body, and overall health through daily habit tracking and biomarker monitoring. Users check off routines like hydration and exercise, watch a personalized lifestyle score respond to their consistency, and track key health biomarkers such as cholesterol ratios and other metrics in one place. The app is built for people who want data-driven insight into their wellness rather than generic advice.',
+      goal: 'The goal was to turn everyday health habits into a measurable, motivating experience. The platform needed a daily routine tracker that felt quick to use, a lifestyle score that meaningfully reflected a user\'s recent behavior, and a biomarker tracking system that presented complex health data in a clear, color-coded way. It also had to feel personal, greeting users by name and adapting to their ongoing progress.',
+      challenge: 'The most interesting part of this project was building the lifestyle score engine, which combines multiple daily habit inputs into a single, easy-to-understand percentage with supporting breakdown icons. I built the Flutter dashboard with a routine checklist, progress ring, and score trend indicators, backed by Node.js APIs that calculated and updated scores as users completed their daily routine. I also built the biomarker tracking screens, which needed to present multiple health metrics with color-coded status indicators (good, moderate, high risk) in a layout that stayed readable even with dense data. Keeping the UI calm and encouraging, rather than clinical, was an ongoing design and implementation focus throughout.',
+      outcome: 'Healink launched on the Apple App Store and gave users a genuinely motivating way to stay on top of their daily health habits. The lifestyle score became the centerpiece of the experience, with users returning daily to see their score improve. The biomarker tracking feature made it easy for users to understand health metrics that are normally buried in lab reports, and the app continues to help users build consistent, science-backed wellness routines.',
+      stats: [
+        { value: 'Flutter', label: 'Frontend' },
+        { value: 'Node.js', label: 'Backend' },
+        { value: 'iOS', label: 'Platform' },
+      ],
+      platform: 'App Store',
+    },
+  },
+  {
+    imgUrl: mtloob,
+    name: 'Mtloob - Medical B2B Marketplace',
+    projectLink: 'https://apps.apple.com/pk/app/%D9%85%D8%B7%D9%84%D9%88%D8%A8-%D8%B7%D8%A8%D9%8A/id6753684200',
+    codeLink: 'https://apps.apple.com/pk/app/%D9%85%D8%B7%D9%84%D9%88%D8%A8-%D8%B7%D8%A8%D9%8A/id6753684200',
+    title: 'Mtloob - Medical B2B Marketplace',
+    description: 'Mtloob is a B2B marketplace connecting healthcare buyers with verified medical suppliers across the region, supporting both English and Arabic. I worked as a Full Stack Flutter Developer building the RFQ (Request for Quote) product selection flow and the medical supplier search and listing experience.',
+    tags: ['Full Stack Applications', 'Mobile Apps', 'All'],
+    caseStudy: {
+      overview: 'Mtloob is a business-to-business marketplace built to connect medical facilities and buyers with verified medical suppliers. Instead of manually contacting multiple vendors, buyers can select the products they need, such as medical items or pharmaceuticals, and submit a Request for Quote (RFQ) that goes out to relevant suppliers. The app also includes a supplier discovery experience, letting buyers search and compare vendors directly. Built with full Arabic and English language support, Mtloob serves the regional healthcare supply market.',
+      goal: 'The business needed a streamlined way for medical buyers to source products from multiple suppliers without the inefficiency of individual phone calls or emails. The platform had to support an RFQ workflow where buyers could select multiple product categories and submit a single request, along with a supplier search experience showing vendor details like ratings and product counts at a glance. Full right-to-left Arabic language support was a hard requirement given the target market.',
+      challenge: 'Building a bilingual RFQ marketplace introduced layout and localization challenges throughout the app. I built the Flutter product selection screen for the RFQ flow, allowing buyers to browse categories like medical items and pharmaceuticals and add them to a request before submitting. I also built the supplier search and listing screens, displaying vendor cards with ratings, product counts, and quick actions in a clean grid layout. Supporting Arabic required careful handling of RTL layouts alongside the existing LTR English UI, so components had to be built in a way that mirrored correctly without breaking alignment. I worked closely with the backend to ensure RFQ submissions and supplier data stayed in sync in real time.',
+      outcome: 'Mtloob launched on the Apple App Store, giving medical buyers a faster way to source products and compare suppliers in one place. The RFQ flow simplified what was previously a manual, time-consuming sourcing process into a few taps. The bilingual Arabic and English experience worked reliably across both layouts, making the app accessible to a wider regional audience. The platform continues to connect medical buyers with its growing supplier network.',
+      stats: [
+        { value: 'Flutter', label: 'Frontend' },
+        { value: 'AR / EN', label: 'Bilingual' },
+        { value: 'iOS', label: 'Platform' },
+      ],
+      platform: 'App Store',
+    },
+  },
+  {
+    imgUrl: flirtmetrics,
+    name: 'Flirtmetrics - Cold Approach',
+    projectLink: 'https://apps.apple.com/us/app/flirtmetrics-cold-approach/id6755988541',
+    codeLink: 'https://apps.apple.com/us/app/flirtmetrics-cold-approach/id6755988541',
+    title: 'Flirtmetrics - Cold Approach',
+    description: 'Flirtmetrics is a self-improvement app that helps users track and analyze their cold approach interactions with data-driven insights. I worked as a Full Stack Flutter Developer, building the leaderboard, analytics dashboard, and location-based discovery features using Flutter and Node.js.',
+    tags: ['Full Stack Applications', 'AI-Powered Applications', 'All'],
+    caseStudy: {
+      overview: 'Flirtmetrics is a performance-tracking app built for men practicing cold approach and social confidence building. Instead of guessing whether they are improving, users log every interaction and see it reflected in a weekly progress ring, a global leaderboard, and a detailed analytics dashboard. The app also includes an "Around Me" map so users can see recent activity nearby, and a logged interaction history with per-person notes like difficulty, closeness, and outcome. It turns an inherently subjective skill into something measurable and gamified.',
+      goal: 'The goal was to make consistent practice feel rewarding and competitive rather than vague. Users needed a fast way to log an interaction right after it happened, a leaderboard that ranked users by country and city to create friendly competition, and an analytics view that could reveal patterns over time, such as which days or locations produced the best results. The premium, gold-accented visual identity also had to come through clearly in the UI to match the app\'s confident, high-end positioning.',
+      challenge: 'The most engaging part of this build was the leaderboard and analytics system. I built the Flutter leaderboard screen with a podium-style top-three display and filterable rankings by chat, country, and city, backed by Node.js APIs that aggregated interaction counts efficiently as the user base grew. On the analytics side, I built the metrics dashboard with bar-chart visualizations of interaction trends and a scrollable interaction log showing per-person details like approach difficulty and closeness score. I also implemented the "Around Me" map feature using location services to plot nearby activity in real time. Styling every screen to match the dark, gold-accented premium theme while keeping charts and data legible required careful attention to contrast and component design throughout.',
+      outcome: 'Flirtmetrics launched on the Apple App Store and gave users a genuinely gamified way to track their social growth. The leaderboard drove real engagement, with users checking rankings regularly to see where they stood. The analytics dashboard made patterns in user behavior visible for the first time, turning subjective practice into trackable data. The app continues to grow its user base around this data-driven approach to self-improvement.',
+      stats: [
+        { value: 'Flutter', label: 'Frontend' },
+        { value: 'Node.js', label: 'Backend' },
+        { value: 'iOS', label: 'Platform' },
+      ],
+      platform: 'App Store',
+    },
+  },
+  {
+    imgUrl: rentify,
+    name: 'Rentify - Rent & Earn',
+    projectLink: 'https://apps.apple.com/pk/app/rentify-rent-earn/id6742651750',
+    codeLink: 'https://apps.apple.com/pk/app/rentify-rent-earn/id6742651750',
+    title: 'Rentify - Rent & Earn',
+    description: 'Rentify is a peer-to-peer rental marketplace that lets users list, discover, and rent items locally with in-app booking and payments. I worked as a Full Stack Flutter Developer using GetX and Node.js, building the product listing, in-app chat, and profile management features.',
+    tags: ['Full Stack Applications', 'Mobile Apps', 'All'],
+    caseStudy: {
+      overview: 'Rentify is a peer-to-peer rental marketplace that lets people earn money by renting out items they already own, from electronics to furniture, instead of letting them sit unused. Renters can browse listings by category, search for specific products, and message owners directly to arrange a rental. Owners get a dedicated renter profile to manage their listed items, track requests, and communicate with renters. The app is designed to make sharing within a community as simple and trustworthy as any standard marketplace.',
+      goal: 'The goal was to build a two-sided marketplace that felt equally smooth for people renting items and people listing them. Renters needed an easy way to browse and search available products with clear pricing and availability. Owners needed a simple flow to manage their rental listings and respond to interest without friction. The platform also needed built-in chat so renters and owners could coordinate pickup, condition, and terms directly inside the app, along with a straightforward account and profile management system.',
+      challenge: 'Balancing two very different user needs, browsing versus listing management, in one clean interface was the central design and engineering challenge. I built the Flutter product discovery screen with category browsing, search, and a wishlist/favorites system using GetX for reactive state management, keeping the UI responsive as users filtered through listings. I implemented the in-app chat feature so renters and owners could message each other about specific items without leaving the app. I also built the profile and account management screens, including the renter profile, customer support access, and account settings, all wired to Node.js backend APIs for data persistence. Keeping listing data and chat state in sync in real time required careful state management across the GetX controllers as users navigated between screens.',
+      outcome: 'Rentify launched on the Apple App Store, giving users a genuine way to earn from items they already own while making rentals more accessible for the community. The in-app chat became a key part of the experience, letting renters and owners settle details quickly without needing outside communication. The listing and browsing flow stayed fast and responsive even as the product catalog grew, and the app continues to grow its base of renters and item owners.',
+      stats: [
+        { value: 'Flutter', label: 'Frontend' },
+        { value: 'GetX', label: 'State Management' },
+        { value: 'iOS', label: 'Platform' },
+      ],
+      platform: 'App Store',
+    },
+  },
+  /*
+  {
     imgUrl: dashboard,
     name: 'Dashboard Sky - AI Chatbot for Writing',
     projectLink: 'https://play.google.com/store/apps/details?id=com.foresko.sky',
@@ -64,6 +175,7 @@ const works = [
       platform: 'Play Store',
     },
   },
+  */
   {
     imgUrl: fusco,
     name: 'ECG Practice',
@@ -148,6 +260,7 @@ const works = [
       platform: 'App Store',
     },
   },
+  /*
   {
     imgUrl: yllc,
     name: 'HABO - Habit Tracker',
@@ -211,6 +324,8 @@ const works = [
       platform: 'Play Store',
     },
   },
+  */
+  /*
   {
     imgUrl: bridge,
     name: 'Chatway - Customer Support',
@@ -232,6 +347,8 @@ const works = [
       platform: 'Play Store',
     },
   },
+  */
+  /*
   {
     imgUrl: lawd,
     name: 'Foodour - Food Delivery',
@@ -316,6 +433,7 @@ const works = [
       platform: 'Play Store',
     },
   },
+  */
 
   // Add more static data entries as needed.
 ];
