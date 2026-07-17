@@ -15,7 +15,6 @@ import bs5 from '../../assets/bs5.jpg';
 import chakra from '../../assets/chakra.jpg';
 import redux from '../../assets/redux.png';
 import cpp from '../../assets/cpp.png';
-import csharp from '../../assets/csharp.png';
 import node from '../../assets/node.png';
 import express from '../../assets/express.jpg';
 import graphql from '../../assets/graphql.png';
