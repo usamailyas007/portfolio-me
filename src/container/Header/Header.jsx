@@ -1,15 +1,15 @@
 /* eslint-disable react/jsx-indent */
 /* eslint-disable quotes */
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 // import { AppWrap } from '../../wrapper';
 // import { images } from '../../constants';
-import './Header.scss';
-import Amazon from '../../assets/profile-pic (1).jpg';
-import linkedin from '../../assets/linkedin.png';
-import github from '../../assets/github.png';
-import { IconCloud } from '../../components/hero-section';
+import "./Header.scss";
+import Amazon from "../../assets/profile-pic.png";
+import linkedin from "../../assets/linkedin.png";
+import github from "../../assets/github.png";
+import { IconCloud } from "../../components/hero-section";
 
 // const scaleVariants = {
 //   whileInView: {
@@ -135,23 +135,30 @@ const Header = () => (
         </div>
       </div>
       <div className="w-right">
-
         <motion.div
           initial={{ rotate: 45 }}
           whileInView={{ rotate: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 3.5, type: 'spring' }}
+          transition={{ duration: 3.5, type: "spring" }}
           className="w-mainCircle"
         >
           <div className="w-secCircle profileIMG">
             <img src={Amazon} alt="" />
-          </div>{' '}
-          <a href="https://www.linkedin.com/in/usama-ilyas-ab5b67257" target="_blank" rel="noreferrer">
+          </div>{" "}
+          <a
+            href="https://www.linkedin.com/in/usama-ilyas-ab5b67257"
+            target="_blank"
+            rel="noreferrer"
+          >
             <div className="w-secCircle">
               <img src={linkedin} alt="" />
             </div>
           </a>
-          <a href="https://github.com/usamailyas007" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/usamailyas007"
+            target="_blank"
+            rel="noreferrer"
+          >
             <div className="w-secCircle">
               <img src={github} alt="" />
             </div>
