@@ -11,16 +11,7 @@ import linkedin from "../../assets/linkedin.png";
 import github from "../../assets/github.png";
 import { IconCloud } from "../../components/hero-section";
 
-// const scaleVariants = {
-//   whileInView: {
-//     scale: [0, 1],
-//     opacity: [0, 1],
-//     transition: {
-//       duration: 1,
-//       ease: 'easeInOut',
-//     },
-//   },
-// };
+
 const iconSlugs = [
   // MERN Stack
   "react",
